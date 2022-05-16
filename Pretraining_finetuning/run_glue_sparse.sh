@@ -1,0 +1,26 @@
+CUDA_VISIBLE_DEVICES=1 python run_glue_sparse.py \
+  --model_name_or_path ./mnli_checkpoint/checkpoint-36816\
+  --task_name mrpc \
+  --max_seq_length 128 \
+  --seed 74 \
+  --output_dir ./tbert240kmnli/mrpc/5e-5 \
+  --overwrite_output_dir \
+  --do_train \
+  --fp16 \
+  --fp16_full_eval \
+  --do_eval \
+  --eval_steps 1000 \
+  --do_predict \
+    --save_strategy steps \
+    --save_steps 1000 \
+  --metric_for_best_model accuracy \
+  --evaluation_strategy steps \
+  --per_device_train_batch_size 32 --gradient_accumulation_steps 1 \
+  --per_device_eval_batch_size 32 \
+  --learning_rate 5e-5 \
+  --weight_decay 0.01 \
+  --max_grad_norm 1.0 \
+  --num_train_epochs 5 \
+  --lr_scheduler_type polynomial \
+  --warmup_steps 0
+
