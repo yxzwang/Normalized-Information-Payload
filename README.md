@@ -1,5 +1,5 @@
 # Normalized Information Payload
- Codes for paper: [What Dense Graph Do You Need for Self-attention?]()
+ Codes for paper: [What Dense Graph Do You Need for Self-attention?](https://arxiv.org/abs/2205.14014)。
 ## Requirements
 The whole environment is in whole_environment.txt. For some main packages, we use 
 `deepspeed==0.5.4`

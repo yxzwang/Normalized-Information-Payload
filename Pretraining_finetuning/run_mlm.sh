@@ -33,7 +33,6 @@ CUDA_VISIBLE_DEVICES=1 python run_mlm_sparse.py \
     --eval_steps 2 \
     --fp16 \
     --fp16_full_eval \
-    --hyperextension \
     --logging_strategy steps \
     --logging_steps 200 \
     --output_dir ./tbert240kmlm_hyperextension/wikitext-103-raw-v1 \
