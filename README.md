@@ -15,7 +15,11 @@ For LRA tasks, we construct our codes based on Nystromformer([paper](https://arx
 
 where we support attn_type in ["hypercube", "bigbird", "longformer", "global", "local", "random", "local+random"], taskname in ["listops","text","retrieval","image","pathfinder32-curv_contour_length_14"].
 
-Datasets should be put in LRA/datasets/ and can be downloaded from [here]()(download link coming soon). You can also use datasets from [Nystromformer LRA.](https://github.com/mlpen/Nystromformer/tree/main/LRA)
+Datasets should be put in LRA/datasets/ and can be downloaded from [here](https://drive.google.com/drive/folders/1AfiMolajUYc55MAiyxneEn66uvGVEY5u?usp=sharing). You can also create datasets by yourself following [Nystromformer LRA](https://github.com/mlpen/Nystromformer/tree/main/LRA) like we did.
+
+Note:
+1.The datasets used in all experiments are derived from previously published scientific papers. We upload it for easier reimplementation of our results.
+2.In order to prevent infrigement, you can contact me to delete or obtain the data and remember to indicate the source when using it.
 
 ### BERT Pretraining and finetuning
 Codes are in Pretraining_finetuning. For BERT pretraining, we adopt the method from academic-budget-bert([paper](https://arxiv.org/abs/2104.07705), [Github](https://github.com/IntelLabs/academic-budget-bert)). Full guides can be found there.  
