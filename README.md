@@ -7,7 +7,7 @@ The whole environment is in whole_environment.txt. For some main packages, we us
 `transformers==4.10.0`
 `datasets==1.14.0`.
 ## Usage:
-There are two parts of experiments, the Long-Range-Arena(LRA) and BERT pretraining.
+There are two parts of experiments, the [Long-Range-Arena](https://github.com/google-research/long-range-arena)(LRA) and BERT pretraining.
 ### LRA
 For LRA tasks, we construct our codes based on Nystromformer([paper](https://arxiv.org/abs/2102.03902), [Github](https://github.com/mlpen/Nystromformer)), run task by 
 
