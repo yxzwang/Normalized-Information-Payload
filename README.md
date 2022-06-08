@@ -18,6 +18,7 @@ where we support `attn_type` in ["hypercube", "bigbird", "longformer", "global",
 Datasets should be put in LRA/datasets/ and can be downloaded from [here](https://drive.google.com/drive/folders/1AfiMolajUYc55MAiyxneEn66uvGVEY5u?usp=sharing). You can also create datasets by yourself following [Nystromformer LRA](https://github.com/mlpen/Nystromformer/tree/main/LRA) like we did.
 
 Note:
+
 1.The datasets used in all experiments are derived from previously published scientific papers. We upload it for easier reimplementation of our results.
 
 2.In order to prevent infrigement, you can contact me to delete or obtain the data and remember to indicate the source when using it.
