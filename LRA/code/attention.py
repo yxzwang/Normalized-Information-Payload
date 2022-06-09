@@ -29,13 +29,10 @@ class TesseractSparsityConfig(SparsityConfig):
 
     @staticmethod
     def get_mask(length):
+        ###get adjacent matrix of hypercube
         def setmap(n):  
             """
-            mask1 和mask2是两种不同的传递方式，mask1:2**k x (k+1); 每一行代表这一行能attention到的位置，k个相邻和自己。
-            mask1每次attention找周围相邻点
-            mask2:k x 2**k x 2**k
-            mask2每次attention只找同一维度的attention
-            map:每个位置转化为相应二进制数的位置
+            ###find neighbors of every token in hypercube
             """
             k = math.ceil(math.log2(n))
             tesseractmap = [0b0, 0b1] 
