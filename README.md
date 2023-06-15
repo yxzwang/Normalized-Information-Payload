@@ -24,7 +24,7 @@ Note:
 2.In order to prevent infrigement, you can contact me to delete or obtain the data and remember to indicate the source when using it.
 
 ### BERT Pretraining and finetuning
-Codes are in Pretraining_finetuning. For BERT pretraining, we adopt the method from academic-budget-bert([paper](https://arxiv.org/abs/2104.07705), [Github](https://github.com/IntelLabs/academic-budget-bert)). Full guides can be found there.  
+Codes are in Pretraining_finetuning. Pre-trained model CubeBERT can be downloaded [Here](https://drive.google.com/file/d/1ZVL6KKrn13MjLT_GVdoApvssfEfiPZC4/view?usp=sharing). For BERT pretraining, we adopt the method from academic-budget-bert([paper](https://arxiv.org/abs/2104.07705), [Github](https://github.com/IntelLabs/academic-budget-bert)). Full guides can be found there.  
 For finetuning, run 
 `python run_glue_sparse.py \
   --model_name_or_path modelpath\
